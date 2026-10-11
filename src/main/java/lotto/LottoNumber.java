@@ -14,9 +14,13 @@ public class LottoNumber {
         return Randoms.pickUniqueNumbersInRange(NUMBER_START, NUMBER_END, LOTTO_SIZE);
     }
 
-    public static void lottoNumberValidate(List<Integer> lottoNumbers) {
+    public static void lottoNumberListValidate(List<Integer> lottoNumbers) {
         validateLottoSize(lottoNumbers);
         lottoNumbers.forEach(LottoNumber::validateNumberRange);
+    }
+
+    public static void lottoNumberValidate(int number){
+        validateNumberRange(number);
     }
 
     private static void validateLottoSize(List<Integer> lottoNumbers) {
