@@ -6,7 +6,7 @@ import lotto.exception.ErrorMessage;
 import lotto.exception.LottoError;
 
 public class Lottos {
-    List<Lotto> purchasedLotto;
+    private List<Lotto> purchasedLotto;
 
     private Lottos(int amount) {
         validate(amount);
@@ -15,6 +15,10 @@ public class Lottos {
 
     public static Lottos of(int amount) {
         return new Lottos(amount);
+    }
+
+    public List<Lotto> getPurchasedLotto(){
+        return List.copyOf(purchasedLotto);
     }
 
     private void purchaseLotto(int amount) {

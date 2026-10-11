@@ -42,4 +42,14 @@ public class Lotto {
     private void sort(List<Integer> numbers) {
         numbers.sort(Comparator.naturalOrder());
     }
+
+    public int match(Lotto other) {
+        return (int) this.numbers.stream()
+                .filter(other::contains)
+                .count();
+    }
+
+    public boolean contains(int number) {
+        return numbers.contains(number);
+    }
 }
