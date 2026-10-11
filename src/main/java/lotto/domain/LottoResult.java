@@ -1,7 +1,8 @@
-package lotto;
+package lotto.domain;
 
 import java.util.EnumMap;
 import java.util.Map;
+import lotto.domain.constant.LottoResultConstants;
 
 public class LottoResult {
     Map<LottoResultConstants, Integer> result = new EnumMap<>(LottoResultConstants.class);

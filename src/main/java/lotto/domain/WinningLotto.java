@@ -1,7 +1,7 @@
-package lotto;
+package lotto.domain;
 
 import java.util.List;
-import java.util.Map;
+import lotto.domain.constant.LottoResultConstants;
 import lotto.exception.ErrorMessage;
 import lotto.exception.LottoError;
 
