@@ -1,7 +1,7 @@
 package lotto;
 
-import exception.ErrorMessage;
-import exception.LottoError;
+import lotto.exception.ErrorMessage;
+import lotto.exception.LottoError;
 import java.util.Comparator;
 import java.util.List;
 

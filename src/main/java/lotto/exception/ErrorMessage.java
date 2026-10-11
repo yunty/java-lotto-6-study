@@ -1,4 +1,4 @@
-package exception;
+package lotto.exception;
 
 public enum ErrorMessage {
     CONTAIN_NULL("입력값에 NULL값이 포함되어있습니다."),
